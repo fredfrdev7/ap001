@@ -54,8 +54,8 @@ function Home() {
                     <Subtitle>
                         <span>
                             <Typewriter
-                                words={['APROVADO PELA ANAC']}
-                                loop={false}
+                                words={['APROVADO PARA USO AERONÁUTICO DE ACORDO COM AS NORMAS DA ANAC']}
+                                loop={1}
                                 cursor
                                 cursorStyle='|'
                                 typeSpeed={100}
