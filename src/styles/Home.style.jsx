@@ -841,8 +841,10 @@ export const Footer = styled.div`
         text-transform: uppercase;
         text-decoration: underline rgb(189, 22, 34) !important;
         letter-spacing: 0.02rem;
-        text-underline-offset: 4px;
-        margin-bottom: 0.6rem; 
+        text-underline-offset: 4px  !important;
+        margin-bottom: 0.6rem;
+        -webkit-text-decoration:  underline !important;
+         
     }
 
     span:nth-child(5) {
@@ -867,7 +869,7 @@ export const ContainerWavesTwo = styled.div `
         transform: translateX(180deg); 
 
     canvas {
-        height: 20vh !important;
+        height: 30vh !important;
         
     }
 `
