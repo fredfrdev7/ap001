@@ -843,8 +843,7 @@ export const Footer = styled.div`
         letter-spacing: 0.02rem;
         text-underline-offset: 4px  !important;
         margin-bottom: 0.6rem;
-        -webkit-text-decoration:  underline !important;
-         
+        -webkit-text-decoration:  underline rgb(189, 22, 34) !important;
     }
 
     span:nth-child(5) {
