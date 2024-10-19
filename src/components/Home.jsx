@@ -32,7 +32,7 @@ import { MdOutline360 } from "react-icons/md";
 import Aos from 'aos'
 import 'aos/dist/aos.css'
 
-import { HomeContainer, Header, CanvasCont, Arrows, ContainerCertified, Subtitle, Container, FontLogo, Propeller, CertifiedCheck, CertifiedCircle, ContainerWaves, AboutContainer, IconAcessibility, TitleBenefits, ItemCheck, CheckItems, ExtractorContent, UsageFlag, FlagSlider, FlagSliderItem, AtomContent, BenefitsCont, GallonContainer, ProductContainer, CtaContent, ButtonCta, FormContent, Icons, Footer, AuthProd } from "../styles/Home.style";
+import { HomeContainer, Header, CanvasCont, Arrows, ContainerCertified, Subtitle, Container, FontLogo, Propeller, CertifiedCheck, CertifiedCircle, ContainerWaves, AboutContainer, IconAcessibility, TitleBenefits, ItemCheck, CheckItems, ExtractorContent, UsageFlag, FlagSlider, FlagSliderItem, AtomContent, BenefitsCont, GallonContainer, ProductContainer, CtaContent, ButtonCta, FormContent, Footer, ContainerWavesTwo, AuthProd } from "../styles/Home.style";
 
 
 
@@ -270,7 +270,7 @@ function Home() {
                 <FormContent id="us">
                     <div className="form_template">
                         <i><PiCertificateLight /> </i>
-                        <p>O APC <strong>AP001</strong> é formulado para <strong>revitalizar o aspecto visual das aeronaves</strong>, selecionamos ingredientes de alta performance, passando por um rigoroso processo de pesquisas e experiências realizados na execução dos procedimentos, com a segurança e bem-estar dos padrões de qualidade <strong>AEROPOLIMENTO</strong>. </p>
+                        <p>O APC <strong>AP001</strong> é formulado para <strong>revitalizar o aspecto visual das aeronaves</strong>, selecionamos ingredientes de alta performance, passando por um rigoroso processo de pesquisas e experiências realizados na execução dos procedimentos,<strong> com a segurança e bem-estar </strong>dos padrões de qualidade <strong>AEROPOLIMENTO</strong>. </p>
                     </div>
                 </FormContent>
                 <Footer>
@@ -292,6 +292,9 @@ function Home() {
                     </a>
                     <span>ACESSE NOSSO INSTAGRAM</span>
                 </Footer>
+                <ContainerWavesTwo>
+                    <ParticlesWave />
+                </ContainerWavesTwo>
                 <AuthProd>
                     <div className="sign_prod">
                         <p>Powered by</p>

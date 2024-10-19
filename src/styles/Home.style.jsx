@@ -839,10 +839,10 @@ export const Footer = styled.div`
 
     p {
         text-transform: uppercase;
-        text-decoration: underline rgb(189, 22, 34);
+        text-decoration: underline rgb(189, 22, 34) !important;
         letter-spacing: 0.02rem;
         text-underline-offset: 4px;
-        margin-bottom: 0.6rem;
+        margin-bottom: 0.6rem; 
     }
 
     span:nth-child(5) {
@@ -861,10 +861,21 @@ export const Footer = styled.div`
 
 `
 
+export const ContainerWavesTwo = styled.div `
+        overflow: hidden;
+        z-index: 0;
+        transform: translateX(180deg); 
+
+    canvas {
+        height: 20vh !important;
+        
+    }
+`
+
 export const AuthProd = styled.div`
         display:flex;
         justify-content:center;
-        padding: 1rem 0rem 1rem 0rem;
+        padding: 0rem 0rem 1rem 0rem;
 
         p {
         font-size: 0.5rem;
