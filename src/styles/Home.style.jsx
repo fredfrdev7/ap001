@@ -685,6 +685,12 @@ export const FlagSliderItem = styled.div`
     padding: 0 5rem;
 `
 
+export const SpanContent = styled.div`
+    img {
+        display: none;
+    }
+`
+
 export const BenefitsCont = styled.div`
     text-align:center;
     font-weight: 300;
@@ -799,23 +805,6 @@ export const FormContent = styled.div`
     
 }
     
-`
-
-export const Icons = styled.div`
-        display:flex;
-        position: relative;
-        right:0.5rem;
-        margin-top:1rem;
-        font-size:2.7rem;
-
-    & > a {
-        color:#bd1622;
-        opacity:0.9;
-        margin-left:1rem;
-    &:hover {
-        opacity: 100%;
-}
-    }
 `
 
 export const Footer = styled.div`

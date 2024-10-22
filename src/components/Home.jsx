@@ -24,6 +24,7 @@ import { PiChartLineUpLight, PiShieldCheckLight, PiCheckSquareLight, PiCheckCirc
 import brazilflag from "../assets/brazilflag.svg"
 import instagram from "../assets/instagram.png"
 import { MdOutline360 } from "react-icons/md";
+import logoopengraph from "../assets/logoopengraph.jpg"
 
 
 
@@ -32,7 +33,7 @@ import { MdOutline360 } from "react-icons/md";
 import Aos from 'aos'
 import 'aos/dist/aos.css'
 
-import { HomeContainer, Header, CanvasCont, Arrows, ContainerCertified, Subtitle, Container, FontLogo, Propeller, CertifiedCheck, CertifiedCircle, ContainerWaves, AboutContainer, IconAcessibility, TitleBenefits, ItemCheck, CheckItems, ExtractorContent, UsageFlag, FlagSlider, FlagSliderItem, AtomContent, BenefitsCont, GallonContainer, ProductContainer, CtaContent, ButtonCta, FormContent, Footer, ContainerWavesTwo, AuthProd } from "../styles/Home.style";
+import { HomeContainer, Header, CanvasCont, Arrows, ContainerCertified, Subtitle, Container, FontLogo, Propeller, CertifiedCheck, CertifiedCircle, ContainerWaves, AboutContainer, IconAcessibility, TitleBenefits, ItemCheck, CheckItems, ExtractorContent, UsageFlag, FlagSlider, FlagSliderItem, AtomContent, SpanContent, BenefitsCont, GallonContainer, ProductContainer, CtaContent, ButtonCta, FormContent, Footer, ContainerWavesTwo, AuthProd } from "../styles/Home.style";
 
 
 
@@ -219,6 +220,9 @@ function Home() {
                         <p data-aos="fade-left" data-aos-duration="1600">REMOÇÃO DE MOSCAS</p>
                     </ItemCheck>
                 </CheckItems>
+                <SpanContent>
+                    <img src={logoopengraph} alt="logoopengraph" />
+                </SpanContent>
                 <BenefitsCont id="benefits">
                     <div data-aos="fade-right" data-aos-duration="1000" className="title_benefits_cont">
                         <i><PiChartLineUpLight /></i>
