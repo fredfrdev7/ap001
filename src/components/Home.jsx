@@ -24,7 +24,7 @@ import { PiChartLineUpLight, PiShieldCheckLight, PiCheckSquareLight, PiCheckCirc
 import brazilflag from "../assets/brazilflag.svg"
 import instagram from "../assets/instagram.png"
 import { MdOutline360 } from "react-icons/md";
-import logoopengraph from "../public/logoopengraph.jpg"
+import logoopengraph from "../../public/logoopengraph.jpg"
 
 
 
