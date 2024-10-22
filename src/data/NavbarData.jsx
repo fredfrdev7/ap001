@@ -33,7 +33,7 @@ export const navbarData = [
 		duration: 500,
 		smooth: true,
 		exact: 'true',
-		offset: -60,
+		offset: 50,
 		to: 'us',
 	},
 ];
