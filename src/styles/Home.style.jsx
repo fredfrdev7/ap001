@@ -484,6 +484,17 @@ export const CanvasCont = styled.div`
      
 `
 
+export const CanvasContAp = styled.div`
+    z-index: 6;
+    margin-bottom: 0rem;
+
+    canvas { 
+        height:50vh !important;
+    }
+     
+`
+
+
 export const GallonContainer = styled.div`
     text-align:center;
     z-index:4;
@@ -599,6 +610,46 @@ export const CheckItems = styled.div`
     padding:2rem 0rem 0rem 0rem;
     font-weight:300;
     overflow:hidden;
+`
+
+export const VideoContainer = styled.div `
+    width: 100%;
+    height: 70vh;
+    position: relative;
+
+    video {
+        width:100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    .layeroverlay {
+        position: absolute;
+        width:100%;
+        height:70vh;
+        top: 0;
+        display:flex;
+        flex-direction:column;
+        background: linear-gradient(180deg, #ffffff 20%, rgba(255, 255, 255, 0) 56.61%);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        overflow: hidden;
+        align-items: center;
+
+        p {
+            margin-top: 3rem;
+            font-size: 1.5rem;
+            font-weight: 300;
+        }
+
+        i {
+            font-size: 3rem;
+            color: #bd1622;
+            margin-top: 1rem;
+        }
+        
+    }
 `
 
 export const ItemCheck = styled.div`      
@@ -808,7 +859,7 @@ export const FormContent = styled.div`
 `
 
 export const Footer = styled.div`
-        padding: 1.5rem 2rem 1rem 2rem;
+        padding: 1.5rem 2rem 0rem 2rem;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -820,12 +871,6 @@ export const Footer = styled.div`
         padding: 1rem 0rem 1rem 0rem;
     }
 
-    img:nth-child(1) {
-        max-width: 3.5rem;
-        padding: 1rem 0rem 0.2rem;
-
-    }
-
     p {
         text-transform: uppercase;
         text-decoration: underline rgb(189, 22, 34) !important;
@@ -835,7 +880,27 @@ export const Footer = styled.div`
         -webkit-text-decoration:  underline rgb(189, 22, 34) !important;
     }
 
-    span:nth-child(5) {
+`
+
+export const InstagramContent = styled.div`
+        padding: 1rem 2rem 1rem 2rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        text-align: center;
+
+    img {
+        max-width: 3.5rem;
+        padding: 1rem 0rem 0.2rem;
+
+    }
+
+    span { 
+        font-size: 1.1rem;
+    }
+
+    p {
         font-size: 0.9rem;
         background-image: linear-gradient(-188deg, rgb(81, 91, 212), rgb(221, 42, 123), rgb(245, 133, 41));
         background-position: initial;
@@ -847,11 +912,10 @@ export const Footer = styled.div`
         -webkit-text-fill-color: transparent;
         color: transparent;
         background-clip: text !important;
-}
-
+    }
 `
 
-export const ContainerWavesTwo = styled.div `
+export const ContainerWavesTwo = styled.div`
         overflow: hidden;
         z-index: 0;
         transform: translateX(180deg); 

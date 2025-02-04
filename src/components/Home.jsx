@@ -20,11 +20,13 @@ import ParticlesWave from "./ParticlesWave"
 import { Canvas } from "@react-three/fiber"
 import { Environment, OrbitControls } from "@react-three/drei"
 import Helicopter from "../../public/Helicopter";
-import { PiChartLineUpLight, PiShieldCheckLight, PiCheckSquareLight, PiCheckCircleLight, PiCertificateLight } from "react-icons/pi";
+import Polishpaste from "../../public/Polishpaste";
+import { PiChartLineUpLight, PiShieldCheckLight, PiCheckSquareLight, PiCheckCircleLight, PiCertificateLight, PiShootingStarLight } from "react-icons/pi";
 import brazilflag from "../assets/brazilflag.svg"
 import instagram from "../assets/instagram.png"
 import { MdOutline360 } from "react-icons/md";
 import logoopengraph from "/logoopengraph.jpg"
+import media from "../assets/media.mp4"
 
 
 
@@ -33,7 +35,7 @@ import logoopengraph from "/logoopengraph.jpg"
 import Aos from 'aos'
 import 'aos/dist/aos.css'
 
-import { HomeContainer, Header, CanvasCont, Arrows, ContainerCertified, Subtitle, Container, FontLogo, Propeller, CertifiedCheck, CertifiedCircle, ContainerWaves, AboutContainer, IconAcessibility, TitleBenefits, ItemCheck, CheckItems, ExtractorContent, UsageFlag, FlagSlider, FlagSliderItem, AtomContent, SpanContent, BenefitsCont, GallonContainer, ProductContainer, CtaContent, ButtonCta, FormContent, Footer, ContainerWavesTwo, AuthProd } from "../styles/Home.style";
+import { HomeContainer, Header, CanvasCont, Arrows, ContainerCertified, Subtitle, Container, FontLogo, Propeller, CertifiedCheck, CertifiedCircle, ContainerWaves, AboutContainer, IconAcessibility, TitleBenefits, ItemCheck, CheckItems, VideoContainer, ExtractorContent, UsageFlag, FlagSlider, FlagSliderItem, AtomContent, SpanContent, BenefitsCont, GallonContainer, ProductContainer, CtaContent, ButtonCta, FormContent, Footer, CanvasContAp, InstagramContent, ContainerWavesTwo, AuthProd } from "../styles/Home.style";
 
 
 
@@ -223,6 +225,15 @@ function Home() {
                 <SpanContent>
                     <img src={logoopengraph} alt="logoopengraph" />
                 </SpanContent>
+                <VideoContainer>
+                 
+                        <video src={media} autoPlay loop muted></video>
+                        <div className="layeroverlay">
+                            <p>RESULTADOS INCOMPARÁVEIS</p>
+                            <i>< PiShootingStarLight /></i>
+                        </div>
+                 
+                </VideoContainer>
                 <BenefitsCont id="benefits">
                     <div data-aos="fade-right" data-aos-duration="1000" className="title_benefits_cont">
                         <i><PiChartLineUpLight /></i>
@@ -291,11 +302,37 @@ function Home() {
                             delaySpeed={1000}
                         />
                     </span>
-                    <a href="https://www.instagram.com/aeropolimentooficial_/" target="_blank">
+                </Footer>
+                <IconAcessibility>
+                    <MdOutline360 />
+                </IconAcessibility>
+                <CanvasContAp>
+                    <Canvas camera={{ position: [130, 0, 100], fov: 45 }}>
+                        <OrbitControls enableZoom={false} autoRotate={true} autoRotateSpeed={6} minPolarAngle={Math.PI / 2.2} maxPolarAngle={Math.PI / 2.2} />
+                        <Suspense fallback={null}>
+                            <Polishpaste />
+                        </Suspense>
+                        <ambientLight intensity={1.3} />
+                        <Environment preset="city" />
+                    </Canvas>
+                </CanvasContAp>
+                <InstagramContent>
+                    <span>
+                        <Typewriter
+                            words={['EM BREVE']}
+                            loop={false}
+                            cursor
+                            cursorStyle='|'
+                            typeSpeed={100}
+                            deleteSpeed={50}
+                            delaySpeed={1000}
+                        />
+                    </span>
+                    <a href="https://www.instagram.com/aeropolimentooficial/" target="_blank">
                         <img src={instagram} />
                     </a>
-                    <span>ACESSE NOSSO INSTAGRAM</span>
-                </Footer>
+                    <p>ACESSE NOSSO INSTAGRAM</p>
+                </InstagramContent>
                 <ContainerWavesTwo>
                     <ParticlesWave />
                 </ContainerWavesTwo>
