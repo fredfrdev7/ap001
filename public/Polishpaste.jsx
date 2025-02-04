@@ -10,12 +10,11 @@ export default function Model(props) {
   const { nodes, materials } = useGLTF('/polishpaste.glb')
   return (
     <group {...props} dispose={null}>
-      <group position={[0, 0, 0]} rotation={[Math.PI / 2, 0, -0.384]}>
+      <group position={[0, 0, 0]} rotation={[Math.PI / 2, 0, 0]}>
         <mesh geometry={nodes['000_Cylinder_1'].geometry} material={materials['Subsurface Textured_db1a4bc1-ab05-4314-b75f-9fe49914f3fd']} />
         <mesh geometry={nodes['000_Cylinder_2'].geometry} material={materials['Subsurface Textured 1_11603183-650f-43bd-9285-95375d4c8d9c']} />
         <mesh geometry={nodes['000_Cylinder_3'].geometry} material={materials['Subsurface Textured 3_832c12d3-11b5-4f01-b97e-2c190ff36a3c']} />
         <mesh geometry={nodes['000_Cylinder_4'].geometry} material={materials['Subsurface Textured 2_bf61ae29-484c-4e1d-a57a-92a7c84be2a8']} />
-        <mesh geometry={nodes['000_Cylinder_5'].geometry} material={materials.Material} />
       </group>
     </group>
   )

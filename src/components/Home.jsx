@@ -226,13 +226,13 @@ function Home() {
                     <img src={logoopengraph} alt="logoopengraph" />
                 </SpanContent>
                 <VideoContainer>
-                 
-                        <video src={media} autoPlay loop muted></video>
-                        <div className="layeroverlay">
-                            <p>RESULTADOS INCOMPARÁVEIS</p>
-                            <i>< PiShootingStarLight /></i>
-                        </div>
-                 
+
+                    <video src={media} autoPlay loop muted></video>
+                    <div className="layeroverlay">
+                        <p>RESULTADOS INCOMPARÁVEIS</p>
+                        <i>< PiShootingStarLight /></i>
+                    </div>
+
                 </VideoContainer>
                 <BenefitsCont id="benefits">
                     <div data-aos="fade-right" data-aos-duration="1000" className="title_benefits_cont">
@@ -307,13 +307,13 @@ function Home() {
                     <MdOutline360 />
                 </IconAcessibility>
                 <CanvasContAp>
-                    <Canvas camera={{ position: [130, 0, 100], fov: 45 }}>
+                    <Canvas camera={{ position: [145, 0, 100], fov: 45 }}>
                         <OrbitControls enableZoom={false} autoRotate={true} autoRotateSpeed={6} minPolarAngle={Math.PI / 2.2} maxPolarAngle={Math.PI / 2.2} />
                         <Suspense fallback={null}>
                             <Polishpaste />
                         </Suspense>
-                        <ambientLight intensity={1.3} />
-                        <Environment preset="city" />
+                        <ambientLight intensity={-0.2} />
+                        <Environment preset="studio" />
                     </Canvas>
                 </CanvasContAp>
                 <InstagramContent>
