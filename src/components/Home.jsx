@@ -227,7 +227,7 @@ function Home() {
                 </SpanContent>
                 <VideoContainer>
 
-                    <video src={media} autoPlay loop muted></video>
+                    <video src={media} autoPlay loop muted playsInline></video>
                     <div className="layeroverlay">
                         <p>RESULTADOS INCOMPARÁVEIS</p>
                         <i>< PiShootingStarLight /></i>
@@ -313,7 +313,7 @@ function Home() {
                             <Polishpaste />
                         </Suspense>
                         <ambientLight intensity={-0.2} />
-                        <Environment preset="studio" />
+                        <Environment preset="warehouse" />
                     </Canvas>
                 </CanvasContAp>
                 <InstagramContent>

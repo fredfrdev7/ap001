@@ -486,10 +486,10 @@ export const CanvasCont = styled.div`
 
 export const CanvasContAp = styled.div`
     z-index: 6;
-    margin-bottom: 0rem;
+    margin-top: 1rem;
 
     canvas { 
-        height:50vh !important;
+        height:40vh !important;
     }
      
 `
@@ -892,7 +892,7 @@ export const InstagramContent = styled.div`
 
     img {
         max-width: 3.5rem;
-        padding: 1rem 0rem 0.2rem;
+        padding: 2rem 0rem 0.2rem;
 
     }
 
