@@ -9,9 +9,8 @@ export const Nav = styled.nav`
 	position:sticky;
 	justify-content: center;
 	align-items: center;
-	font-size: 1.2rem;
-	font-weight: 400;
-    font-family: "Jura", sans-serif;
+	font-size: 1.1rem;
+	font-weight: 300;
 	top: 0;
 	z-index: 50;
 	width: 100%;

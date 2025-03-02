@@ -40,9 +40,37 @@ export const HomeContainer = styled.div`
     flex-direction:column;
 `
 
+export const LogoMain = styled.div`
+    display:flex;
+    justify-content:center;
+    margin-top: 2rem;
+
+    img {
+        max-width: 23rem;
+    }
+
+    @media (max-width: 590px) and (min-width: 431px) {
+        img {
+            max-width: 20rem;
+        }
+    }
+
+    @media (max-width: 431px) and (min-width: 390px) {
+        img {
+            max-width: 18rem;
+        }
+    }
+
+    @media (max-width: 389px) and (min-width: 320px) {
+        img {
+            max-width:15rem;
+        }
+    }
+`
+
 export const Header = styled.div`
-    font-weight: 300;
-    font-size: 2.4rem; 
+    font-weight: 100;
+    font-size: 2.2rem; 
     text-align: center; 
     padding: 2rem 0rem 0rem 0rem; 
     z-index: 9;
@@ -52,7 +80,7 @@ export const Header = styled.div`
 export const Subtitle = styled.div`
     padding: 1rem 13rem 0rem 13rem;
     overflow: hidden;
-    font-size:1.8rem;
+    font-size:1.6rem;
     z-index: 1;
 
     p {
@@ -74,10 +102,10 @@ export const Subtitle = styled.div`
 
     @media (max-width: 430px) and (min-width: 400px) {
         padding: 1rem 2rem 0rem 2rem;
-        font-size: 1.5rem;
+        font-size: 1.4rem;
 
         p {
-        font-size:0.7rem;
+        font-size:0.6rem;
         
         }
     }
@@ -232,7 +260,7 @@ export const AboutContainer = styled.div`
     }
 
     .title_about_container {
-        font-size:1.5rem;
+        font-size:1.4rem;
         display:flex;
         justify-content: space-between;
         align-items:center;
@@ -241,7 +269,7 @@ export const AboutContainer = styled.div`
 
     .subtitle_about_container {
         display:flex;
-        font-size:1.4rem;
+        font-size:1.3rem;
         align-items: center;
         padding: 0rem 0rem 0.6rem 0rem;
     }
@@ -256,11 +284,11 @@ export const AboutContainer = styled.div`
         display:flex;
         align-items:center;
         padding: 0.8rem 0rem;
-        font-size: 1.2rem;
+        font-size: 1.1rem;
     }
 
     .rest_about_container {
-        font-size: 1.1rem;
+        font-size: 1rem;
         display: flex;
         align-items: center;
         padding: 0.8rem 0rem;
@@ -359,6 +387,10 @@ export const AboutContainer = styled.div`
     }
 
     @media (max-width: 590px) and (min-width: 431px) {
+        .title_about_container {
+            font-size: 1.3rem;
+        }
+        
         .title_about_container .stroke:nth-child(1) {
             width: 6rem;  
         }
@@ -386,6 +418,10 @@ export const AboutContainer = styled.div`
 
 
     @media (max-width: 430px) and (min-width: 414px) {
+        .title_about_container {
+            font-size: 1.3rem;
+        }
+
         .stroke {
             width: 6rem;
         }  
@@ -399,7 +435,7 @@ export const AboutContainer = styled.div`
         }
 
         .rest_about_container {
-            font-size:1rem;
+            font-size:0.9rem;
         }
 
       
@@ -431,7 +467,7 @@ export const AboutContainer = styled.div`
         }
 
         .rest_about_container {
-            font-size:1rem;
+            font-size:0.9rem;
         }
         
         .rest_about_container .stroke_one {
@@ -593,7 +629,7 @@ export const IconAcessibility = styled.div`
 `
 
 export const TitleBenefits = styled.div`
-    font-size: 1.5rem; 
+    font-size: 1.4rem; 
     font-weight: 300;
     text-align: center;
     padding:0rem 2rem;
@@ -639,7 +675,7 @@ export const VideoContainer = styled.div `
 
         p {
             margin-top: 3rem;
-            font-size: 1.5rem;
+            font-size: 1.4rem;
             font-weight: 300;
         }
 
@@ -656,7 +692,7 @@ export const ItemCheck = styled.div`
     display:flex;
     align-items:center;
     padding:0.8rem;
-    font-size:1.2rem;
+    font-size:1.1rem;
 
     p {
         padding-left: 1rem;
@@ -673,6 +709,18 @@ export const ItemCheck = styled.div`
            
     }   
 
+`
+
+export const VideoInsideApc = styled.div`
+    display:flex;
+    align-items: center;
+    justify-content:center;
+    padding: 2rem 0rem 1rem 0rem;
+    
+    video {
+        width:100%;
+        height:80vh;
+    }
 `
 
 export const ExtractorContent = styled.div`
@@ -692,7 +740,7 @@ export const ExtractorContent = styled.div`
 
     p {
         margin-top:1rem;
-        font-size:1.2rem;
+        font-size:1.1rem;
     }
 `
 
@@ -717,6 +765,8 @@ export const UsageFlag = styled.div`
     font-weight: 300;
     
     p {
+        font-size: 0.9rem;
+        letter-spacing: 0.09rem;
         padding: 0.5rem 0rem 0.5rem 2rem;
         
     }
@@ -752,7 +802,7 @@ export const BenefitsCont = styled.div`
     }
 
     .title_benefits_cont {
-        font-size:1.5rem;
+        font-size:1.4rem;
         padding: 3rem 0rem 1rem 0rem;
 
     }
@@ -768,10 +818,10 @@ export const BenefitsCont = styled.div`
 
     li {
         padding: 1rem 1rem 2rem 1rem;
-        font-size:1.2rem;
+        font-size:1.1rem;
 
         p:nth-child(3) {
-            font-size: 1rem;
+            font-size: 0.9rem;
             margin-top: 0.6rem;
         }
     }
@@ -793,7 +843,7 @@ export const ButtonCta = styled.div`
         color:#bd1622;
         width: 10rem;
         height: 2.9rem;
-        font-size: 1.3rem;
+        font-size: 1.2rem;
         margin-top:1rem;
         border: double 1px #bd1622;
         border-radius: 1rem;
@@ -867,7 +917,7 @@ export const Footer = styled.div`
         text-align: center;
      
     img {
-        max-width: 12rem;
+        max-width: 13rem;
         padding: 1rem 0rem 1rem 0rem;
     }
 
@@ -897,11 +947,11 @@ export const InstagramContent = styled.div`
     }
 
     span { 
-        font-size: 1.1rem;
+        font-size: 1rem;
     }
 
     p {
-        font-size: 0.9rem;
+        font-size: 0.8rem;
         background-image: linear-gradient(-188deg, rgb(81, 91, 212), rgb(221, 42, 123), rgb(245, 133, 41));
         background-position: initial;
         background-size: initial;
@@ -932,7 +982,7 @@ export const AuthProd = styled.div`
         padding: 0rem 0rem 1rem 0rem;
 
         p {
-        font-size: 0.5rem;
+        font-size: 0.4rem;
         margin-bottom:0.4rem;
         color: #aaaaaa;
         

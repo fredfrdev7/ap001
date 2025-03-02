@@ -27,6 +27,7 @@ import instagram from "../assets/instagram.png"
 import { MdOutline360 } from "react-icons/md";
 import logoopengraph from "/logoopengraph.jpg"
 import media from "../assets/media.mp4"
+import mediaapc from "../assets/mediaapc.mp4"
 
 
 
@@ -35,7 +36,7 @@ import media from "../assets/media.mp4"
 import Aos from 'aos'
 import 'aos/dist/aos.css'
 
-import { HomeContainer, Header, CanvasCont, Arrows, ContainerCertified, Subtitle, Container, FontLogo, Propeller, CertifiedCheck, CertifiedCircle, ContainerWaves, AboutContainer, IconAcessibility, TitleBenefits, ItemCheck, CheckItems, VideoContainer, ExtractorContent, UsageFlag, FlagSlider, FlagSliderItem, AtomContent, SpanContent, BenefitsCont, GallonContainer, ProductContainer, CtaContent, ButtonCta, FormContent, Footer, CanvasContAp, InstagramContent, ContainerWavesTwo, AuthProd } from "../styles/Home.style";
+import { HomeContainer, LogoMain, Header, CanvasCont, Arrows, ContainerCertified, Subtitle, Container, FontLogo, Propeller, CertifiedCheck, CertifiedCircle, ContainerWaves, AboutContainer, IconAcessibility, TitleBenefits, ItemCheck, CheckItems, VideoContainer, ExtractorContent, VideoInsideApc, UsageFlag, FlagSlider, FlagSliderItem, AtomContent, SpanContent, BenefitsCont, GallonContainer, ProductContainer, CtaContent, ButtonCta, FormContent, Footer, CanvasContAp, InstagramContent, ContainerWavesTwo, AuthProd } from "../styles/Home.style";
 
 
 
@@ -48,6 +49,7 @@ function Home() {
     return (
         <>
             <HomeContainer>
+                <LogoMain><img src={logoap} alt="logoap" /></LogoMain>
                 <Header>
                     <p>APC</p>
                     <ContainerCertified>
@@ -123,7 +125,7 @@ function Home() {
                     </div>
                     <div className="rest_about_container">
                         <div data-aos="fade-down" data-aos-duration="2200" className="stroke"></div>
-                        <p data-aos="fade-left" data-aos-duration="2200">É UM TIPO DE <strong>LIMPADOR VERSÁTIL</strong> QUE PODE SER USADO EM <strong>DIFERENTES SUPERFÍCIES</strong>, TANTO NO <strong>INTERIOR</strong> QUANTO <strong>EXTERIOR</strong>.</p>
+                        <p data-aos="fade-left" data-aos-duration="2200"><strong>LIMPADOR VERSÁTIL</strong> QUE PODE SER USADO EM <strong>DIFERENTES SUPERFÍCIES</strong>, TANTO NO <strong>INTERIOR</strong> QUANTO <strong>EXTERIOR</strong>.</p>
                     </div>
                     <div className="rest_about_container">
                         <div data-aos="fade-down" data-aos-duration="2500" className="stroke_three"></div>
@@ -183,6 +185,9 @@ function Home() {
                         <p data-aos="fade-left" data-aos-duration="2200">TAPEÇARIA</p>
                     </ItemCheck>
                 </CheckItems>
+                <VideoInsideApc>
+                    <video src={mediaapc} autoPlay loop muted playsInline></video>
+                </VideoInsideApc>
                 <ExtractorContent>
                     <img src={extractor} alt="extractor" />
                     <p data-aos="fade-right" data-aos-duration="1000">PODENDO SER UTILIZADO EXTRATORA PARA LIMPEZA PESADA EM TAPETES!</p>
@@ -289,7 +294,7 @@ function Home() {
                     </div>
                 </FormContent>
                 <Footer>
-                    <p>13 anos de dedicação à aviação.</p>
+                    <p>14 anos de dedicação à aviação.</p>
                     <img src={logoap} alt="logoap" />
                     <span>
                         <Typewriter

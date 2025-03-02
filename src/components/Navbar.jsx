@@ -1,5 +1,5 @@
 import { useState } from 'react'
-import logoproduct from '../assets/logoproduct.svg'
+import logoproducts from '../assets/logoproducts.svg'
 import { PiTextAlignRightThin } from "react-icons/pi";
 import { PiXThin } from "react-icons/pi";
 // import { PiSealCheckLight } from "react-icons/pi";
@@ -14,7 +14,7 @@ const Navbar = ({ hide }) => {
     <Nav hide={hide}>
       <NavbarContainer>
         <NavLogo to="/" onClick={scroll.scrollToTop}>
-          <NavIcon src={logoproduct}/>
+          <NavIcon src={logoproducts}/>
         </NavLogo>
 
         {!hide && (
